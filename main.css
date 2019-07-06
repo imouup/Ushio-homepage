@@ -95,3 +95,12 @@ footer #hitokoto{text-shadow:2px 1px 2px #666}
     #donate .donate-img-box{margin:1.3em auto 1em;max-width:17em;max-height:13.5em}
     #donate .donate-img-box img{margin:.1em}
 }
+.logo:hover {
+    border: 3px solid #5ba4e5;
+    transition: all .5s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(350deg);
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg)
+}
