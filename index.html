@@ -86,26 +86,21 @@
                     </div>
                 </section>
                 <section id="archives">
-                    <h1>近期事件</h1>
-                    <ul class="archive-list">
-                        <li>2020-6-14 - ushio-session docker化</li>
-                    </ul>
-                    <ul class="archive-list">
-                        <li>2020-6-17 - 转移blog从typecho到hexo</li>
-                    </ul>
-                    <ul class="archive-list">
-                        <li>2020-6-19 - 重构img API</li>
-                    </ul>
-                    <ul class="archive-list">
-                        <li>2020-6-22 - 实现ushio cn docker化</li>
-                    </ul>
-                    <ul class="archive-list">
-                        <li>2020-6-24 - upload接口部署成功</li>
-                    </ul>
-                    <ul class="archive-list">
-                        <li>2020-6-28 - 转移ushio usa至搬瓦工</li>
-                    </ul>
                 </section>
+                <script>$.get('https://log.yimian.xyz/proj.php', (res)=>{
+                    res = JSON.parse(res);
+                    res.reverse();
+                    var s = '';
+                    for(var i = 0; i < 5; i++){
+                        s += `
+                    <ul class="archive-list">
+                    <li>${res[i].datetime.substr(0, 10)} - ${res[i].description}</li>
+                    </ul>
+                        `;
+                    }
+
+                    $('#archives').html(s);
+                });</script>
                 <section id="about">
                     <h1>关于</h1>
                     <p>
