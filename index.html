@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Ushio - 小汐</title>
+    <title>Ushio<!--{zh}小汐 - Ushio--><!--{en}Ushio--></title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Cache-Control" content="no-transform">
     <meta http-equiv="Cache-Control" content="no-siteapp">
@@ -12,9 +12,19 @@
     <meta name="description" content="小汐の主页">
     <link rel="stylesheet" href="https://cdn.yimian.xyz/ushio-homepage/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>var http_allow = true;</script>
+    <script>var http_allow = true;lang = ['zh', 'en'];</script>
     <script src="https://cdn.yimian.xyz/ushio-js/ushio-head.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.yimian.xyz/shaky/shaky.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169276192-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169276192-4');
+</script>
+
   </head>
   <body>
     <div class="loading">
@@ -35,16 +45,16 @@
                 </div>
                 <ul class="menu">
                     <li>
-                        <a goto="#home" class="active">HOME</a>
+                        <a goto="#home" class="active">..<!--{zh}主页--><!--{en}Home--></a>
                     </li>
                     <li>
-                        <a goto="#archives">ARCHIVES</a>
+                        <a goto="#archives">..<!--{zh}日志--><!--{en}ARCHIVES--></a>
                     </li>
                     <li>
-                        <a goto="#about">ABOUT</a>
+                        <a goto="#about">..<!--{zh}关于--><!--{en}ABOUT--></a>
                     </li>
                     <li>
-                        <a goto="#donate">DONATE</a>
+                        <a goto="#donate">..<!--{zh}捐助--><!--{en}DONATE--></a>
                     </li>
                 </ul>
                 <div class="copyright">
@@ -56,31 +66,31 @@
             </div>
             <div class="right">
                 <section id="home" class="active">
-                    <h1>Ushio - 汐</h1>
+                    <h1>Ushio<!--{zh}小汐 - Ushio--><!--{en}Ushio--></h1>
                     <div class="items">
                         <a id="ushio-guide" href="https://guide.yimian.xyz/" rel="noopener">
                             <i class="fa fa-home"></i>
-                            <span>Guide</span>
+                            <span>..<!--{zh}导航--><!--{en}Guide--></span>
                         </a>
                         <a href="https://github.com/iotcat/ushio" rel="noopener">
                             <i class="fa fa-code-fork"></i>
-                            <span>Git</span>
+                            <span>..<!--{zh}开源--><!--{en}Git--></span>
                         </a>
                         <a id="ushio-monitor" href="https://monitor.yimian.xyz" rel="noopener">
                             <i class="fa fa-bar-chart-o"></i>
-                            <span>Monitor</span>
+                            <span>..<!--{zh}监控--><!--{en}Monitor--></span>
                         </a>
                         <a id="cloud" href="https://onedrive.yimian.xyz" rel="noopener">
                             <i class="fa fa-cloud"></i>
-                            <span>Cloud</span>
+                            <span>..<!--{zh}云盘--><!--{en}Cloud--></span>
                         </a>
                         <a id="ushio-api" href="https://api.yimian.xyz" rel="noopener">
                             <i class="fa fa-share-alt-square"></i>
-                            <span>API</span>
+                            <span>..<!--{zh}接口--><!--{en}API--></span>
                         </a>
                         <a id="ushio-shadowsocks" href="https://img.yimian.xyz" rel="noopener">
                             <i class="fa fa-file-image-o"></i>
-                            <span>Image</span>
+                            <span>..<!--{zh}图库--><!--{en}Image--></span>
                         </a>
 
                     </div>
@@ -102,19 +112,23 @@
                     $('#archives').html(s);
                 });</script>
                 <section id="about">
-                    <h1>关于</h1>
-                    <p>
+                    <h1>..<!--{zh}关于--><!--{en}ABOUT--></h1>
+                    <p>..<!--{zh}
                         汐酱，超萌滴信息支持系统，足迹遍布3大洲(´・ω・｀)<br/>
                         目标是满足主人呓喵酱的一切无理要求，愿望是希望主人早日<del>爆炸</del>现充 
-                        <br/>/ <a id="ushio-ushio" href="https://www.eee.dog/ushio.html">More...</a>
+                        <br/>/ <a id="ushio-ushio" href="https://github.com/iotcat/ushio">More...</a>-->
+                        <!--{en}
+                        Ushio, a distributed information support system (´・ω・｀)<br/>
+                        Aiming to provide uninterrupted global support service for IoTcat and other public users.
+                        <br/>/ <a id="ushio-ushio" href="https://github.com/iotcat/ushio">More...</a>-->
                     </p>
                 </section>
                 <section id="donate">
-                    <h1><del>我很可爱，请给我钱 !！<del></h1>
+                    <h1>..<!--{zh}<del>我很可爱，请给我钱 !！<del>--><!--{en}<del>I am so cute,, Please Give Me Money~~</del>--></h1>
                     <div class="donate-img-box">
                         <a id="ushio-pay" href="https://pay.yimian.xyz/" target="_blank" rel="noopener">
                             <img src="https://cdn.yimian.xyz/img/pay/all.gif" style="zoom: 0.6" >
-                            <p>三项全能二维码，来者不拒( • ̀ω•́ )✧</p>
+                            <p>..<!--{zh}三项全能二维码，来者不拒( • ̀ω•́ )✧--><!--{en}Scan or click this QR code to pay.. --></p>
                         </a>
        
                         
