@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>var http_allow = true;lang = ['zh', 'en'];</script>
     <script src="https://cdn.yimian.xyz/ushio-js/ushio-head.min.js"></script>
+    <script>page.proj = 'iotcat/ushio-homepage';</script>
     <link rel="stylesheet" type="text/css" href="https://cdn.yimian.xyz/shaky/shaky.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169276192-4"></script>
@@ -96,21 +97,26 @@
                     </div>
                 </section>
                 <section id="archives">
-                </section>
                 <script>$.get('https://log.yimian.xyz/proj.php', (res)=>{
                     res = JSON.parse(res);
                     res.reverse();
                     var s = '';
-                    for(var i = 0; i < 4; i++){
+                    for(var i = 0; i < 3; i++){
                         s += `
                     <ul class="archive-list">
                     <li>${res[i].datetime.substr(0, 10)} - ${res[i].description}</li>
                     </ul>
                         `;
                     }
+                    s += `
+                    <ul class="archive-list">
+                    <li><a href="https://cv.yimian.xyz/timeline/index.html"><span class=".zh">更多..</span><span class=".en">More..</span></a></li>
+                    </ul>
+                        `;
 
                     $('#archives').html(s);
                 });</script>
+                </section>
                 <section id="about">
                     <h1><span class=".zh">关于</span><span class=".en">ABOUT</span></h1>
                     <p><span><span class=".zh">
